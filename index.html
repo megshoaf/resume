@@ -1,89 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Megan Charlotte Shoaf</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css"/>
-		<meta charset=
-		meta name="Description" content="Megan Shoaf Resume."
-		meta name="keywords" content="megan shoaf, harrisonburg, resume"
-		 />
+		<meta charset="UTF-8">
+		<title>Megan Shoaf's Resume</title>
+	
+
+	<style>
+		 		main {
+		 			display: grid;
+		 			grid-template-columns: repeat(2, 1fr);
+		 			grid-template-rows: .25fr .25fr .50fr .25fr 1fr 1fr .25fr;
+		 			grid-template-areas: 
+		 			"megan megan"
+		 			"george george"
+		 			"contact pic"
+		 			"education education"
+		 			"edu edu"
+		 			"skills  experience"
+		 			"footer footer"	;
+		 		} 
+
+
+		 	#photo img {width: 126%;
+		 	}
+
+		 
+		header { grid-area: megan;}
+		#george { grid-area: george;}
+		#contact {grid-area: contact;}
+		#edu { grid-area: edu;}
+		#education {grid-area: education;}
+		#skills { grid-area: skills; }
+		#experience { grid-area: experience;}
+		footer { grid-area: footer;}
+		#photo { grid-area: pic;}
+
+
+		#megan {
+		background-color: #ccc;
+		padding: 10px; 
+		margin-top: 20px}
+
+
+
+		#contact { 
+		background-color: #ccc;
+		padding: 20px; }
+
+		#edu {
+			background-color: #ccc;
+			padding: 5px; }
+
+		#skills, #experience {
+			padding: 5px; }
+
+		footer {
+			background-color: #ccc;
+		}
+
+
+
+
+		body { 
+		font-family: sans-serif; }
+
+		
+		</style>
 	</head>
 
 
+	<body> 
+		<main>
+			<header>
+				<div id="megan">
+					<h1>Megan Shoaf</h1>
+				</div>
+			</header>
 
-	<h1><strong>Contact</strong></h1>
-		
+				<div id="george">
+					<h2>Contact</h2>
+				</div>
 
-		<p>Megan Shoaf<br>
-			2500 Milledge Place<br>
-			Harrisonburg, VA 22801</p>
-			<img src="harlems.jpg">
+				<div id="photo">
+					<img src="harlems.jpg" alt="Photo of me and harlem smiling.">
+				</div>
 
-	<h2><strong>Skills & Specialties</strong></h2>
 
-		<h4>Languages, Platforms, Frameworks</h4>
+				<div id="contact">
+					<ul><li>2500 Milledge Place
+						Harrisonburg, VA 22801</li>
+					<li>(703)408-5055</li>
+					<li> shoafmc@dukes.jmu.edu</li>
+					<li> mshoaf16@gmail.com</li> </ul>
+					</div>
 
-			<p>Wordpress<p>
+			<div id="education">
+					<h2>Education</h2>
+				</div>
 
-		<h4>Servers & Operating Systems</h4>
+			<div id="edu">
+					<p>Bachelor Of Science in Media Arts and Design</p>
+					<ul><li>Concentration in Interactive Design</li>
+						<li>James Madison University, Harrisonburg, VA</li> <li>May 2021</li></ul>
+				</p>
+			</div>
 
-			<p>OS X, Windows</p>
+			<div id="skills">
+					<h2>Skills &amp; Specialties</h2>
+					<h4>Languages, Platforms, Frameworks</h4>
+						<p>Wordpress, Javascript, HTML5</p>
+					<h4>Servers &amp; Operating Systems</h4>
+						<p>OS X, Windows</p>
+					<h4>Applications</h4>
+						<p>Adobe Creative Cloud (Photoshop Lightroom, Indesign, Illustrator), Microsoft Office (One</p>
+					</div>
 
-		<h4>Applications</h4>
 
-			<p>Adobe Creative Cloud (Photoshop Lightroom, InDesign, Illustrator), Microsoft Office (Word, Excel, Access, Powerpoint), All major web browsers, Sublime text</p>
-
-	<h2>Education</h2>
-
-		<h4>Bachelor of Science in Media Arts and Design</h4>
-
-			<p><ul><li>Concentration in Interactive Design</li>
-				<li> <a href="https://www.jmu.edu/">James Madison University,</a> Harrisonburg, VA </li>
-				<li>May 2021</li></ul></p>
-
-	<h2>Experience</h2>
-
-			<p>May 2019 - Present<br>
+			<div id="experience">
+				<h2>Experience</h2>
+				<p>May 2019 - Present<br>
 				<a href="https://www.woofies.com/">Woofies Franchise,</a> Ashburn, VA<br>
 				<ul><li>Caring for, walking, grooming of animals </li>
 				</ul></p>
 
-			<p>June 2017-August 2018<br>
-				<a href="https://southbeachtanningcompany.com/">South Beach Tanning Company,</a> Ashburn VA <br>
-				<ul><li>Consultant, sales</li><p>
 
+				<p>June 2017-August 2018<br>
+				<a href="https://southbeachtanningcompany.com/">
+				South Beach Tanning Company,</a> Ashburn VA <br>
+				<ul><li>Consultant, sales</li></p>
+				</ul>
+			</div>
 
+			<footer>
+					<p>&copy; 2020 MCS</p>
+			</footer>
 
+		</main>			
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	</body>
 </html>
+
